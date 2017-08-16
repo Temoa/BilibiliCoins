@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_left"/>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_right_disable"/>
+
+    <FrameLayout
+        android:id="@+id/coins_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="96dp"
+            android:src="@drawable/ic_pay_coins_box"/>
+
+        <ImageView
+            android:id="@+id/coins"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="96dp"
+            android:padding="16dp"
+            android:src="@drawable/ic_coins_one"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/coins_box_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/coins_box">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/ic_pay_coins_box"/>
+
+        <ImageView
+            android:id="@+id/coins_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="104dp"
+            android:padding="16dp"
+            android:src="@drawable/ic_coins_two"/>
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/mario"
+        android:layout_width="96dp"
+        android:layout_height="134dp"
+        android:layout_below="@id/coins_box"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_22_mario"/>
+</RelativeLayout>
